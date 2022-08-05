@@ -4,6 +4,8 @@
 
 Get a copy of this repository using the `git clone git@github.com:AnaEliza/testing-fundamentals.git` command in the terminal.
 
+Navigate into the project folder using the `cd testing-fundamentals/` command in the terminal.
+
 Install all the required libraries using the `mvn clean install` command in the terminal.
 
 Run the tests using the `mvn test` command in the terminal. 
