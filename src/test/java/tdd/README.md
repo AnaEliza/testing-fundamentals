@@ -1,20 +1,48 @@
 # Exercises to be solved using TDD
 
+Remember to always write the test scenarios first when solving the exercises below.
+
+
 ## Taxi Fare
 
 Create a method that calculates the taxi fare for one ride.
 
 All rides have a base fare of 2.00.
 
-From 06:00 until 23:00 the fare per kilometer is 0.80.
+For rides shorter or equal to 10km the fare per kilometer is 0.80.
 
-From 23:01 until 05:59 the fare per kilometer is 0.90.
+For rides longer than 10km the fare per kilometer is 0.90.
 
 The test scenarios are:
-- Kati's ride started at 10:35, lasted 20 kilometers and the fare was 18.00;
-- Agu's ride started at 02:00, lasted 5 kilometers and the fare was 6.50;
-- Trinu's ride started at 05:59, lasted 10 kilometers and the fare was 11.00;
-- Ott's ride started at 23:01, lasted 7 kilometers and the fare was 8.30.
+- Kati's ride lasted 20 kilometers and the fare was 20.00;
+- Agu's ride lasted 5 kilometers and the fare was 6.00;
+- Trinu's ride lasted 10 kilometers and the fare was 11.00;
+- Ott's ride lasted 8 kilometers and the fare was 8.40.
+
+
+## WacDonald's Order
+
+Create a method that calculates the final price when ordering at WacDonald's restaurant chain.
+
+The prices per item unit are:
+
+| Item             | Type  | Price |
+|------------------|-------|-------|
+| Cheeseburger     | Main  | 1.55  |
+| Big burger       | Main  | 6.50  | 
+| Chicken nuggets  | Side  | 4.20  |
+| French fries     | Side  | 1.90  |
+| Great-Cola       | Drink | 1.65  |
+| Water            | Drink | 2.00  |
+| Apple juice      | Drink | 1.85  |
+
+
+A 30% discount should be applied when a customer chooses a combo: one Main + one Side + one Drink.
+
+The test scenarios are:
+- One chicken nuggets + one water = 6.20
+- One big burger + one french fries + two apple juices = 12.10
+- One cheeseburger + one chicken nuggets + one great-cola = 5.18
 
 
 ## FizzBuzz Game
@@ -62,6 +90,8 @@ The test scenarios are:
 - Given the number 13, the sequence is: 13, 40, 20, 10, 5, 16, 8, 4, 2, 1;
 - Given the number 25, the sequence is: 25, 76, 38, 19, 58, 29, 88, 44, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1;
 - Given the number 9, the sequence is: 9, 28, 14, 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1.
+
+<b>Hint:</b> Do not use array in this problem, because it is not possible to know the final length of the sequence.
 
 
 ## Sum Square Difference

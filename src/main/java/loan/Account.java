@@ -1,19 +1,15 @@
 package loan;
 
-import java.time.LocalDate;
-
 public class Account {
 
     private String number;
     private String owner;
     private double balance;
-    private LocalDate dateCreated;
 
-    public Account(String number, String owner, double balance, LocalDate dateCreated) {
+    public Account(String number, String owner, double balance) {
         this.number = number;
         this.owner = owner;
         this.balance = balance;
-        this.dateCreated = dateCreated;
     }
 
     public String getNumber() {
@@ -28,11 +24,4 @@ public class Account {
         return balance;
     }
 
-    public LocalDate getDateCreated() {
-        return dateCreated;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
 }

@@ -6,21 +6,21 @@ public class JUnitExampleTest {
 
     @BeforeAll
     static void beforeAll() {
-        // Used to warm up expensive test.html resource like database connections
-        System.out.println("beforeAll - Executed once before any test.html starts");
+        // Used to warm up expensive test resource like database connections
+        System.out.println("beforeAll - Executed once before any test starts");
         System.out.println();
     }
 
     @BeforeEach
     void beforeEach() {
         // Used to prepared objects that will be used across tests
-        System.out.println("beforeEach - Executed before each test.html");
+        System.out.println("beforeEach - Executed before each test");
     }
 
     @AfterEach
     void afterEach() {
         // Used to restore common objects to their original state
-        System.out.println("afterEach - Executed after each test.html");
+        System.out.println("afterEach - Executed after each test");
         System.out.println();
     }
 
@@ -33,14 +33,13 @@ public class JUnitExampleTest {
     @Test
     @DisplayName("My First Test")
     void myFirstTest() {
-        System.out.println("My first test.html");
+        System.out.println("My first test");
     }
 
     @Test
-    @Disabled
-        // It is not a good practice to keep tests disabled
+    @Disabled // It is not a good practice to keep tests disabled
     void mySecondTest() {
-        System.out.println("My second test.html");
+        System.out.println("My second test");
     }
 
     @Test
