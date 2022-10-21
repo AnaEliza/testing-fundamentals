@@ -16,7 +16,7 @@ For rides longer than 10km the fare per kilometer is 0.90.
 The test scenarios are:
 - Kati's ride lasted 20 kilometers and the fare was 20.00;
 - Agu's ride lasted 5 kilometers and the fare was 6.00;
-- Trinu's ride lasted 10 kilometers and the fare was 11.00;
+- Trinu's ride lasted 10 kilometers and the fare was 10.00;
 - Ott's ride lasted 8 kilometers and the fare was 8.40.
 
 
