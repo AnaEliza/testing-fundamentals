@@ -1,0 +1,1 @@
+This folder contains features that will be used by the software customers.
